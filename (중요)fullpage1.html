@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 슬릭과 같이 인터넷에서 다운받아 사용가능하다 -->
+    <link rel="stylesheet" href="css/fullpage.css">
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/fullpage.js"></script>
+
+    <script lang="java">
+        $(document).ready(function(){
+            $("#fullpage").fullpage({
+                navigation: true,
+                navigationPosition: "left",
+                navigationTooltips: ["page1", "page2", "page3", "page4", "page5"],
+                ScrollingSpeed: 5000
+            })// .fullpage
+        })// fin
+    </script>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{
+            color: white;
+            font-size: 5vh;
+        }
+
+        .section{
+            text-align: center;
+            background-size: cover;
+        }
+
+        .section1{
+            background-image: url(img/bg1.jpg);
+        }
+        .section2{
+            background-image: url(img/bg2.jpg);
+        }
+        .section3{background-image: url(img/bg3.jpg);}
+        .section4{background-image: url(img/bg4.jpg);}
+        .section5{background-image: url(img/bg5.jpg);}
+    </style>
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section1 section"><h1>fullpage01</h1></div>
+        <div class="section2 section"><h1>fullpage02</h1></div>
+        <div class="section3 section"><h1>fullpage03</h1></div>
+        <div class="section4 section"><h1>fullpage04</h1></div>
+        <div class="section5 section"><h1>fullpage05</h1></div>
+    </div>
+</body>
+</html>
